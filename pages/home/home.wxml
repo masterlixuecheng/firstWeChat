@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" style="height:450rpx">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"  mode="scaleToFill"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<!-- <image src="/images/img(31).jpg"></image> -->
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active />
+<progress percent="100" active />
+<map id="map" longitude="118.33" latitude="35.07" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 600px;"></map>
