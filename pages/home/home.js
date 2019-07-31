@@ -5,14 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls:[
-      '/images/img(20).jpg',
-      '/images/img(31).jpg',
-      '/images/img(33).jpg',
+    imgUrls: [
+      '/images/pic(7).jpg',
+      '/images/pic(3).jpg',
+      '/images/pic(9).jpg',
+      '/images/pic(2).jpg',
+      '/images/pic(11).jpg',
     ],
     indicatorDots: true,
     autoplay: true,
-    interval:1000,
+    interval:3000,
     duration: 500,
 
     markers: [{
